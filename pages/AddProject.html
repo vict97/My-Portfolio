@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="../awesome/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>AddProject</title>
+  </head>
+
+  <body>
+    <div class="col-md-12">
+      <div class="row">
+        <div class="panel panel-success" style="margin-top: 10px">
+          <div class="panel-heading">Recherche des fondations...</div>
+          <div class="panel-body">
+            <form method="get" action="filiere.php" class="form-inline">
+              <div class="form-group">
+                <input
+                  type="search"
+                  name="nomFondation"
+                  placeholder="Taper le nom d'une fondation"
+                  class="form-control"
+                  value=""
+                />
+              </div>
+
+              <!-- Bouton de recherche -->
+              <button type="submit" class="btn btn-success">
+                <i class="fa fa-search"> </i> Rechercher...
+              </button>
+              &nbsp; &nbsp;
+
+              <a href="nouvelleFondation.php" class="btn btn-primary">
+                <i class="fa fa-plus"> </i> Nouvelle fondation
+              </a>
+            </form>
+          </div>
+        </div>
+
+        <div class="panel panel-primary" style="margin-top: 10px">
+          <div class="panel-heading">Liste de fondations...</div>
+          <div class="panel-body">
+            <table class="table table-bordered table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>N°</th>
+                  <th>Nom</th>
+                  <th>Description</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Portflio</td>
+                  <td>Ma portefeuile web</td>
+                  <td style="width: 310px">
+                    <a href="" class="btn btn-info">Editer</a>
+                    <a href="" class="btn btn-danger">Supprimer</a>
+                    <a href="" class="btn btn-success">Voir en Details</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>My CV</td>
+                  <td>Mon cv web de developpeur web et web mobile</td>
+                  <td style="width: 310px">
+                    <a href="" class="btn btn-info">Editer</a>
+                    <a href="" class="btn btn-danger">Supprimer</a>
+                    <a href="" class="btn btn-success">Voir en Details</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
